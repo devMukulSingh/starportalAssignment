@@ -21,6 +21,7 @@ const LuckyDrawCard = () => {
     flex-col
     gap-4
     max-w-[20rem]
+    z-20
     "
     >
       {/* //Clock */}

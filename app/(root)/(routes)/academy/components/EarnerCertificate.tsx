@@ -6,24 +6,24 @@ import FirstAirdropSvg from './FirstAirdropSvg';
 
 const EarnerCertificate = () => {
   return (
-    <div className=' w-full  flex'>
+    <div className=" w-full  flex ">
+      <div className="absolute top-[400px] left-[-3rem]  hidden sm:block z-10">
+        <FirstAirdropSvg />
+      </div>
 
-    <div className='absolute top-[400px] left-[-3rem]'>
-      <FirstAirdropSvg/>
-    </div>
-
-    <div
-      className="
+      <div
+        className="
+        z-20
     flex
     self-start
     flex-col
     gap-3
     py-10
     "
-    >
-      <div className="flex flex-col items-center gap-5">
-        <div
-          className="
+      >
+        <div className="flex flex-col items-center gap-5">
+          <div
+            className="
         bg-neutral-700
         border-2
         rounded-full
@@ -31,47 +31,47 @@ const EarnerCertificate = () => {
         w-fit
         p-3
         "
-        >
-          <Check className="text-neutral-500" />
-        </div>
-        <figure className="p-1 rounded-xl border-2 w-fit">
-          <Image
-            className="
+          >
+            <Check className="text-neutral-500" />
+          </div>
+          <figure className="p-1 rounded-xl border-2 w-fit">
+            <Image
+              className="
                 object-contain 
                 rounded-xl 
                 border
                 "
-            alt="intractCertified2"
-            src={"/intractCertified2.png"}
-            width={150}
-            height={200}
-          />
-        </figure>
-      </div>
+              alt="intractCertified2"
+              src={"/intractCertified2.png"}
+              width={150}
+              height={200}
+            />
+          </figure>
+        </div>
 
-      <h1 className="text-lg text-neutral-500">
-        Intract Certified: Earner NFT
-      </h1>
-      <h1
-        className="
+        <h1 className="text-lg text-neutral-500">
+          Intract Certified: Earner NFT
+        </h1>
+        <h1
+          className="
             text-sm 
             text-neutral-700
             
             "
-      >
-        Your proof of <br />
-        airdrop expertise
-      </h1>
-      <Button
-        className="
+        >
+          Your proof of <br />
+          airdrop expertise
+        </h1>
+        <Button
+          className="
             bg-neutral-800
             hover:bg-neutral-800
             w-full
             "
-      >
-        Claim
-      </Button>
-    </div>
+        >
+          Claim
+        </Button>
+      </div>
     </div>
   );
 }

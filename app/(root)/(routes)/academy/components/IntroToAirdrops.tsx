@@ -8,16 +8,15 @@ import RoadToEarnerSvg from "./RoadToEarnerSvg";
 const IntroToAirdrops = () => {
   const [openDropdown, setOpenDropdown] = useState(false);
   return (
-    <div className="w-full flex justify-center relative  ">
-      <div className="absolute left-24 ">
-          <RoadToEarnerSvg/>
+    <div className="w-full flex  justify-center relative mt-[-80px] md:mt-[-50px] ">
+      <div className="absolute left-[-200px]  hidden sm:block z-10">
+        <RoadToEarnerSvg />
       </div>
-    <div
-      className="self-center max-w-[32rem] w-full "
-      >
-      <div
-        onClick={() => setOpenDropdown((prev) => !prev)}
-        className="
+
+      <div className="max-w-[32rem] w-4/5 sm:w-full z-20">
+        <div
+          onClick={() => setOpenDropdown((prev) => !prev)}
+          className="
         flex 
         gap-5 
         h-[14rem] 
@@ -28,13 +27,14 @@ const IntroToAirdrops = () => {
         sm:px-5
         sm:py-4
         p-4
-        rounded-3xl
+        sm:rounded-3xl
+        rounded-xl
         w-full
         items-center
         "
         >
-        <figure
-          className="
+          <figure
+            className="
         border
         rounded-2xl 
         p-10
@@ -45,15 +45,15 @@ const IntroToAirdrops = () => {
         sm:flex
         justify-center
         "
-        >
-          <Image
-            fill
-            className="object-cover"
-            alt="basics"
-            src={"/airdrops.png"}
-          />
-          <div
-            className="
+          >
+            <Image
+              fill
+              className="object-cover"
+              alt="basics"
+              src={"/airdrops.png"}
+            />
+            <div
+              className="
             px-4
             w-24
             py-2
@@ -68,36 +68,36 @@ const IntroToAirdrops = () => {
             text-sm
             text-white
             "
-          >
-            4 Quests
-          </div>
-        </figure>
+            >
+              4 Quests
+            </div>
+          </figure>
 
-        <div className="flex flex-col gap-3 justify-center sm:w-auto w-full ">
-          <h1 className="text-xl sm:text-2xl text-white whitespace-nowrap">
-            Introduction to Airdrops
-          </h1>
-          <h1 className="text-xs sm:text-sm text-neutral-400">
-            Your best bet to make it big in crypto!
-          </h1>
-          <hr className="border-dashed text-neutral-400" />
-          <div
-            className="
+          <div className="flex flex-col gap-3 justify-center sm:w-auto w-full ">
+            <h1 className="text-xl sm:text-2xl text-white whitespace-nowrap">
+              Introduction to Airdrops
+            </h1>
+            <h1 className="text-xs sm:text-sm text-neutral-400">
+              Your best bet to make it big in crypto!
+            </h1>
+            <hr className="border-dashed text-neutral-400" />
+            <div
+              className="
             bg-neutral-600 
             rounded-full 
           p-3
           w-fit
           "
-          >
-            <h1 className="text-sm text-white">1040 XPs</h1>
-          </div>
-        </div>
-
-        <ChevronDown className="self-start" />
-      </div>
-      {openDropdown && <AirdropDropdown openDropdown={openDropdown} />}
-    </div>
+            >
+              <h1 className="text-sm text-white">1040 XPs</h1>
             </div>
+          </div>
+
+          <ChevronDown className="self-start" />
+        </div>
+        {openDropdown && <AirdropDropdown openDropdown={openDropdown} />}
+      </div>
+    </div>
   );
 };
 

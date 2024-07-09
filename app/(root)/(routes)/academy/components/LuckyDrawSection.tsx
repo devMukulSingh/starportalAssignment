@@ -10,6 +10,7 @@ const LuckyDrawSection = () => {
         md:p-0
         p-5
         min-h-screen
+        mt-5
     '>
         <div className='
         md:w-3/4

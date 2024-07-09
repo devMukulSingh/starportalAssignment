@@ -3,7 +3,7 @@ import React from 'react'
 const RoadToLearnerSvg2 = () => {
   return (
     <svg
-      width="778"
+      width="60vw"
       height="329"
       viewBox="0 0 778 329"
       fill="none"
