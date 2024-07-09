@@ -3,13 +3,18 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import AirdropDropdown from "./AirdropsDropdown";
+import RoadToEarnerSvg from "./RoadToEarnerSvg";
 
 const IntroToAirdrops = () => {
   const [openDropdown, setOpenDropdown] = useState(false);
   return (
+    <div className="w-full flex justify-center relative  ">
+      <div className="absolute left-24 ">
+          <RoadToEarnerSvg/>
+      </div>
     <div
-      className="self-center max-w-[32rem] "
-    >
+      className="self-center max-w-[32rem] w-full "
+      >
       <div
         onClick={() => setOpenDropdown((prev) => !prev)}
         className="
@@ -27,7 +32,7 @@ const IntroToAirdrops = () => {
         w-full
         items-center
         "
-      >
+        >
         <figure
           className="
         border
@@ -68,7 +73,7 @@ const IntroToAirdrops = () => {
           </div>
         </figure>
 
-        <div className="flex flex-col gap-3 justify-center">
+        <div className="flex flex-col gap-3 justify-center sm:w-auto w-full ">
           <h1 className="text-xl sm:text-2xl text-white whitespace-nowrap">
             Introduction to Airdrops
           </h1>
@@ -78,8 +83,8 @@ const IntroToAirdrops = () => {
           <hr className="border-dashed text-neutral-400" />
           <div
             className="
-          bg-neutral-600 
-          rounded-full 
+            bg-neutral-600 
+            rounded-full 
           p-3
           w-fit
           "
@@ -92,6 +97,7 @@ const IntroToAirdrops = () => {
       </div>
       {openDropdown && <AirdropDropdown openDropdown={openDropdown} />}
     </div>
+            </div>
   );
 };
 

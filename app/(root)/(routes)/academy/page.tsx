@@ -7,7 +7,7 @@ import TopCryptoCreators from './components/TopCryptoCreators';
 
 const AcademyPage = () => {
   return (
-    <div className="flex flex-col gap-14 ">
+    <div className="flex flex-col gap-5 ">
       <HomeSection />
       <BasicsSection />
       <AirdropsSection />

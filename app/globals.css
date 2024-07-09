@@ -5,6 +5,7 @@
     background-color: black;
     color: #7D7D7D;
     border-color: #1b1b1b!important;
+    overflow-x: hidden;
   }
   @layer base {
     :root {

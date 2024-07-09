@@ -9,13 +9,16 @@ const AirdropsSection = () => {
         w-full
         justify-center
         md:p-0
-        p-5
+        px-5
+        mt-20
+        relative
     ">
         <div className="
         flex
         flex-col
-        md:w-3/4 
+        md:w-5/6
         w-full
+        
 
         ">
             <IntroToAirdrops/>

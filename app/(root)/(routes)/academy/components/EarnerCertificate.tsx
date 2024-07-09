@@ -2,9 +2,16 @@ import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
+import FirstAirdropSvg from './FirstAirdropSvg';
 
 const EarnerCertificate = () => {
   return (
+    <div className=' w-full  flex'>
+
+    <div className='absolute top-[400px] left-[-3rem]'>
+      <FirstAirdropSvg/>
+    </div>
+
     <div
       className="
     flex
@@ -64,6 +71,7 @@ const EarnerCertificate = () => {
       >
         Claim
       </Button>
+    </div>
     </div>
   );
 }

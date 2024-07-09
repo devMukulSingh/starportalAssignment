@@ -45,7 +45,8 @@ const AirdropDropdown = ({ openDropdown }: Props) => {
     h-[23rem]
     overflow-auto
     bg-neutral-900
-    p-5
+    sm:p-5
+    p-3
     "
     >
       <div className="w-full flex flex-col gap-3">

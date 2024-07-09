@@ -15,7 +15,7 @@ type Props = {
 const AirdropCard = ({ airdrop, openDropdown }: Props) => {
   return (
     <div
-      className={`flex  items-center p-3 h-[7rem] gap-3 bg-neutral-800 ${
+      className={`flex w-full  items-center p-3 h-[7rem] gap-3 bg-neutral-800 ${
         openDropdown ? "rounded-b-0" : "rounded-xl"
       }`}
     >
@@ -28,11 +28,11 @@ const AirdropCard = ({ airdrop, openDropdown }: Props) => {
         />
       </figure>
       <div className="flex flex-col gap-3 justify-center w-full sm:w-2/3">
-        <h1 className="text-neutral-200 text-lg">
+        <h1 className="text-neutral-200 text-md sm:text-lg">
           {`#${airdrop.id}`}: {airdrop.title}
         </h1>
         <hr className="border-dashed w-full" />
-        <div className="flex items-center gap-2 justify-between ">
+        <div className="flex items-center gap-2 justify-between w-full">
           <h1 className="text-sm">
             {airdrop.task}
             {""}Tasks
