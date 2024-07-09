@@ -4,17 +4,23 @@ import RewardInfo from "./RewardInfo"
 const LuckyDrawSection = () => {
   return (
     <div className='
-        h-screen
         w-full
         flex
-        items-center
         justify-center
+        md:p-0
+        p-5
+        min-h-screen
     '>
         <div className='
         md:w-3/4
         w-full
+        sm:flex-row
         flex
+        flex-col
         gap-20
+        sm:items-start
+        items-center
+        justify-end
         '>
             <LuckyDrawCard/>
             <RewardInfo/>

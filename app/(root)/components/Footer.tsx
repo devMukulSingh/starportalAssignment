@@ -95,7 +95,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="flex border w-full flex-col min-h-screen justify-end items-center">
+    <div className="flex  w-full flex-col items-center">
       {/* <hr className='w-full'/> */}
       <div className="flex md:px-0 px-10 py-10 gap-10  flex-col md:w-5/6 w-full text-sm">
         <div

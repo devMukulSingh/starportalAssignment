@@ -11,7 +11,6 @@ const EarnerCertificate = () => {
     self-start
     flex-col
     gap-3
-    h-screen
     py-10
     "
     >

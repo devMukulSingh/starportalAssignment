@@ -7,8 +7,8 @@ const HomeSection = () => {
     <div>
       <div
         className="
+        h-screen
         w-full
-        min-h-[calc(100vh-4rem)]
         absolute
         flex
         flex-col
@@ -16,6 +16,8 @@ const HomeSection = () => {
         items-center
         gap-10
         z-30
+        sm:p-0
+        p-5
       "
       >
         <Image
@@ -47,13 +49,15 @@ const HomeSection = () => {
           <ArrowRight className="ml-2" />
         </Button>
       </div>
+     
       <figure
         className="
         w-full
         h-screen
+        relative
       "
       >
-        <Image src={"/bg-image.png"} fill alt="bg-image" className="" />
+        <Image src={"/bg-image.png"} fill alt="bg-image" className="object-cover" />
       </figure>
     </div>
   );

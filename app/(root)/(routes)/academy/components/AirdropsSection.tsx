@@ -6,18 +6,17 @@ const AirdropsSection = () => {
   return (
     <div className="
         flex
-        h-screen
         w-full
-        items-center
         justify-center
-        mt-20
-
+        md:p-0
+        p-5
     ">
         <div className="
         flex
         flex-col
-        sm:w-3/4 
+        md:w-3/4 
         w-full
+
         ">
             <IntroToAirdrops/>
             <EarnerCertificate/>

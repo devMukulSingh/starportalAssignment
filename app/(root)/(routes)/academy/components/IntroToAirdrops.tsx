@@ -6,13 +6,15 @@ const IntroToAirdrops = () => {
     <div
       className="
       self-center
-        w-[30rem]
+        max-w-[30rem]
         flex 
         gap-5 
         h-[15rem] 
         bg-neutral-900
-        p-8
+        sm:p-8
+        p-4
         rounded-xl
+        w-full
         "
     >
       <figure
@@ -23,6 +25,9 @@ const IntroToAirdrops = () => {
         relative
         w-[10rem]
         h-[10rem]
+        hidden
+        sm:flex
+        justify-center
         "
       >
         <Image
@@ -45,15 +50,14 @@ const IntroToAirdrops = () => {
             border
             border-neutral-700
             text-sm
-            right-4
             "
         >
           4 Quests
         </div>
       </figure>
       <div className="flex flex-col gap-3 justify-center">
-        <h1 className="text-2xl">Introduction to Airdrops</h1>
-        <h1 className="text-sm text-neutral-400">
+        <h1 className="text-xl sm:text-2xl">Introduction to Airdrops</h1>
+        <h1 className="text-xs sm:text-sm text-neutral-400">
           Your best bet to make it big in crypto!
         </h1>
         <hr className="border-dashed text-neutral-400" />

@@ -6,13 +6,13 @@ const BasicsSection = () => {
   return (
     <div
       className="
-        h-screen 
         flex
         justify-center
-        items-center
+        md:p-0
+        px-5
         "
     >
-      <div className="sm:w-3/4 w-full flex flex-col h-full">
+      <div className="md:w-3/4 w-full flex flex-col ">
         <BasicsOfCrypto />
         <Certificate />
       </div>

@@ -30,11 +30,11 @@ const NavLinks = () => {
         },
       ];
     return (
-    <div className="flex gap-8 items-center ">
+    <div className=" gap-5 items-center lg:flex hidden ">
       {navLinks.map((link, index) => (
         <Link
             className={
-                `${pathName.endsWith(link.href)
+                `text-sm whitespace-nowrap ${pathName.endsWith(link.href)
                 ?" text-white border-b-4 border-white border-" 
                 : 'text-neutral-300'
                 }

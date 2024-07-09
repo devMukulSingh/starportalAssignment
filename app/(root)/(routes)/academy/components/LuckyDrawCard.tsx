@@ -17,12 +17,10 @@ const LuckyDrawCard = () => {
   return (
     <div
       className="
-    h-[calc(100vh-4rem)]
     flex 
     flex-col
     gap-4
-    w-[20rem]
-
+    max-w-[20rem]
     "
     >
       {/* //Clock */}

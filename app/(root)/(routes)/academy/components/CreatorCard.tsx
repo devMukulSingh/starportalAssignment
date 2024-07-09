@@ -10,11 +10,13 @@ type Props = {
 
 const CreatorCard = ({ creator }: Props) => {
   return (
-    <div
+    <figure
       className="
     rounded-xl
-    h-[25rem]
-    w-[18rem]
+    sm:h-[20rem]
+    sm:w-[15rem]
+    h-[14rem]
+    w-[9rem]
     relative
     "
     >
@@ -27,10 +29,11 @@ const CreatorCard = ({ creator }: Props) => {
         font-medium 
         bottom-5 
         text-white 
-        text-xl">
+        text-lg
+        sm:text-xl">
         {creator.title}
       </h1>
-    </div>
+    </figure>
   );
 };
 

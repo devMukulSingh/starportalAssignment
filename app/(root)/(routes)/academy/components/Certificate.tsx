@@ -10,7 +10,6 @@ const Certificate = () => {
     flex
     flex-col
     gap-3
-    h-screen
     py-10
     self-end
     "

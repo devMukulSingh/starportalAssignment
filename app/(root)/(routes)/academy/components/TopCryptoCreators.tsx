@@ -27,16 +27,17 @@ const TopCryptoCreators = () => {
   return (
     <div
       className="
-    h-screen
     flex
     gap-5
     justify-center
     items-center
+    md:p-0
+    p-3
     "
     >
       <div className="flex md:w-5/6 w-full flex-col gap-10 justify-center items-center">
         <div className="space-y-2">
-          <h1 className="text-2xl font-medium text-white text-center">
+          <h1 className="text-xl sm:text-2xl font-medium text-white text-center">
             Top Crypto Creators and Projects to Follow
           </h1>
           <h1 className="text-sm text-center">
@@ -45,11 +46,10 @@ const TopCryptoCreators = () => {
         </div>
         <div
           className="
-
             grid
-            grid-cols-1
-            lg:grid-cols-4
-            md:grid-cols-2
+            xl:grid-cols-4
+            lg:grid-cols-3
+            grid-cols-2
             gap-5
             "
         >

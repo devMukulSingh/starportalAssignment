@@ -7,7 +7,7 @@ const RewardInfo = () => {
       className="
       flex
       flex-col
-      w-[20rem]
+      max-w-[20rem]
       rounded-md
       border
       bg-neutral-900

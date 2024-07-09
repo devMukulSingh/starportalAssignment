@@ -4,7 +4,8 @@ import { Search } from 'lucide-react'
 const SearchBar = () => {
   return (
     <div
-      className="flex
+      className="
+      flex
     bg-neutral-900
      items-center 
      border
@@ -12,12 +13,12 @@ const SearchBar = () => {
      px-5
      rounded-full
      gap-2
+     w-[20rem]
      "
     >
       <Search className='text-neutral-500'/>
       <Input
         className="
-        w-[20rem]
         bg-neutral-900 
         border-none 
         !focus:outline-none
