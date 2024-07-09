@@ -1,24 +1,35 @@
-import Image from 'next/image';
-import React from 'react'
+"use client";
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
+import React, { useState } from "react";
+import AirdropDropdown from "./AirdropsDropdown";
 
 const IntroToAirdrops = () => {
+  const [openDropdown, setOpenDropdown] = useState(false);
   return (
     <div
-      className="
-      self-center
-        max-w-[30rem]
+      className="self-center max-w-[32rem] "
+    >
+      <div
+        onClick={() => setOpenDropdown((prev) => !prev)}
+        className="
         flex 
         gap-5 
-        h-[15rem] 
-        bg-neutral-900
-        sm:p-8
+        h-[14rem] 
+        bg-neutral-800
+        hover:bg-neutral-700
+        transition-colors
+        cursor-pointer
+        sm:px-5
+        sm:py-4
         p-4
-        rounded-xl
+        rounded-3xl
         w-full
+        items-center
         "
-    >
-      <figure
-        className="
+      >
+        <figure
+          className="
         border
         rounded-2xl 
         p-10
@@ -29,15 +40,15 @@ const IntroToAirdrops = () => {
         sm:flex
         justify-center
         "
-      >
-        <Image
-          fill
-          className="object-cover"
-          alt="basics"
-          src={"/airdrops.png"}
-        />
-        <div
-          className="
+        >
+          <Image
+            fill
+            className="object-cover"
+            alt="basics"
+            src={"/airdrops.png"}
+          />
+          <div
+            className="
             px-4
             w-24
             py-2
@@ -50,30 +61,38 @@ const IntroToAirdrops = () => {
             border
             border-neutral-700
             text-sm
+            text-white
             "
-        >
-          4 Quests
-        </div>
-      </figure>
-      <div className="flex flex-col gap-3 justify-center">
-        <h1 className="text-xl sm:text-2xl">Introduction to Airdrops</h1>
-        <h1 className="text-xs sm:text-sm text-neutral-400">
-          Your best bet to make it big in crypto!
-        </h1>
-        <hr className="border-dashed text-neutral-400" />
-        <div
-          className="
+          >
+            4 Quests
+          </div>
+        </figure>
+
+        <div className="flex flex-col gap-3 justify-center">
+          <h1 className="text-xl sm:text-2xl text-white whitespace-nowrap">
+            Introduction to Airdrops
+          </h1>
+          <h1 className="text-xs sm:text-sm text-neutral-400">
+            Your best bet to make it big in crypto!
+          </h1>
+          <hr className="border-dashed text-neutral-400" />
+          <div
+            className="
           bg-neutral-600 
           rounded-full 
           p-3
           w-fit
           "
-        >
-          <h1 className="text-sm">1040 XPs</h1>
+          >
+            <h1 className="text-sm text-white">1040 XPs</h1>
+          </div>
         </div>
+
+        <ChevronDown className="self-start" />
       </div>
+      {openDropdown && <AirdropDropdown openDropdown={openDropdown} />}
     </div>
   );
-}
+};
 
-export default IntroToAirdrops
+export default IntroToAirdrops;

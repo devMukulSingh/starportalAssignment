@@ -10,9 +10,10 @@ const BasicsSection = () => {
         justify-center
         md:p-0
         px-5
+        min-h-screen
         "
     >
-      <div className="md:w-3/4 w-full flex flex-col ">
+      <div className="md:w-3/4 w-full flex flex-col  ">
         <BasicsOfCrypto />
         <Certificate />
       </div>
