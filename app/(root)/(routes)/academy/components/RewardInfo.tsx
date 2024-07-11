@@ -18,7 +18,7 @@ const RewardInfo = () => {
       mt-10
     "
     >
-      <div className='flex text-md items-center'>
+      <div className="flex text-md items-center">
         Reward info
         <BiInfoCircle size={20} className="ml-1" />
       </div>
@@ -32,8 +32,8 @@ const RewardInfo = () => {
         insights, a close-knit community of the best airdrop earners, and more.
       </h1>
       <h1>
-        To win: make sure you've connected your Twitter and Discord accounts -
-        and follow our criteria!
+        To win: make sure you&apos;ve connected your Twitter and Discord
+        accounts - and follow our criteria!
       </h1>
     </div>
   );
